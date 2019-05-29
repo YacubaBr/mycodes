@@ -1,0 +1,22 @@
+      print 'Nota da primeira prova'
+  n1 = gets.to_f
+       print 'Nota da segunda prova'
+  n2 = gets.to_f
+       puts "Agora será calculada sua media da segunda etapa"
+        print 'Nota da terceira prova'
+  n3 = gets.to_f
+        print 'Nota da quarta prova'
+  n4 = gets.to_f
+
+=begin
+-é necessario que o usuario saiba de todas as suas notas para se calcular a média final;
+-precisa-se aperfeiçoar o programa pra poder calcular também a média para quem ficou de AF e, de acordo com a nota, se foi aprovado ou reprovado na cadeira.
+=end
+
+        e1 = (n1 + n2)/2
+        e2 = (n3 + n4)/2
+print 'Sua nota final é : '
+      mf = (2*e1+3*e2)/5
+      print mf
+     
+ 
