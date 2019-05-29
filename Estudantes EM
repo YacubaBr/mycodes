@@ -1,0 +1,40 @@
+ano = -1
+q_terceiro = 0
+q_livros_segundo = 0
+q_livros_umaluno_segundo = 0
+q_livros_pri_terc = 0
+m_livros_lidos = 0
+porc_nao_redacao = 0.0
+nao_ler = 0
+total_alunos = 0
+while ano != 0
+  print 'Qual o ano?'
+  ano = gets.to_i
+  if ano == 3
+    q_terceiro = q_terceiro + 1
+  end
+  if ano != 0
+    total_alunos = total_alunos + 1
+    print 'Quantos livros lê por mês?'
+    livros = gets.to_i
+    if ano == 2
+      q_livros_segundo = q_livros_segundo + livros
+      if livros > q_livros_umaluno_segundo
+        q_livros_umaluno_segundo = livros
+      end
+    else 
+      q_livros_pri_terc = q_livros_pri_terc + livros
+    end
+    print 'Gosta de redação?'
+    redacao = gets.to_i
+    if redacao == 0
+        nao_ler = nao_ler + 1
+    end 
+  end
+end
+media = (q_livros_segundo + q_livros_pri_terc) / total_alunos
+porc_nao_redacao = ((nao_ler.to_f / total_alunos) * 100)
+puts porc_nao_redacao
+puts q_terceiro
+puts media
+puts q_livros_umaluno_segundo
