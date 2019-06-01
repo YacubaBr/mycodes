@@ -1,0 +1,21 @@
+print 'digite n'
+n = gets.to_f
+maior = n
+maior2 = n
+i = 1
+while i < 10
+
+#o if irá selecionar os dois maiores numeros digitados pelo usuario.
+
+    print 'digite outro n'
+    n = gets.to_f
+    if n > maior2
+      maior2 = n
+    end
+    if n > maior and n != maior2
+        maior = n
+    end
+ i = i + 1
+end
+puts maior
+puts maior2
