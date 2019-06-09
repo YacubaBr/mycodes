@@ -1,3 +1,5 @@
+#BY IAGO FELIPE
+
 print 'digite n'
 n = gets.to_f
 maior = n
