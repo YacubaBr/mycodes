@@ -1,3 +1,5 @@
+#BY IAGO FELIPE
+
       print 'Nota da primeira prova'
   n1 = gets.to_f
        print 'Nota da segunda prova'
