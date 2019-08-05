@@ -1,0 +1,33 @@
+def data_valida? (data)
+  v_data = data.split('/')
+  if v_data.length != 3
+
+    return false
+
+  else 
+  
+     if (v_data[0].to_i < 31 and v_data[0].to_i > 0) and
+    (v_data[1].to_i < 12 and v_data[1].to_i > 0) and
+    (v_data[2].to_i > 0)
+    
+    return true
+    
+    end 
+    return false 
+  end
+
+  
+
+end 
+
+puts "Digite data (DD/MM/AAAA)"
+d=gets
+  if data_valida?(d)
+    puts "Data válida"
+  else 
+    puts "Data Inválida"
+  end
+  
+  
+  
+  direitos reservados a iagofelipe.
